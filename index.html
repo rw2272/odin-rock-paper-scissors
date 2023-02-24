@@ -8,29 +8,30 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id = "maincontent">
 		<div id = "sectionone">
 			<h1 id = "title">Rock, Paper Scissors</h1>
-			<h3>Best of Five</h3>
 		</div>
 		<div id = "sectiontwo">
-			<div id = 'choicetitle'>ROUND X</div>
+			<div id = 'choicetitle'>ROUND 0</div>
 			<div id = "choice">
-				<div id = "rockbutton">Rock</div>
-				<div id = "paperbutton">Paper</div>
-				<div id = "scissorsbutton">Scissors</div>
+				<div id = "rockbutton" class = "button wrap">Rock<i class="fa-solid fa-hand-back-fist"></i></div>
+				<div id = "paperbutton" class = "button wrap">Paper<i class="fa-solid fa-hand"></i></div>
+				<div id = "scissorsbutton" class = "button wrap">Scissors<i class="fa-solid fa-hand-scissors"></i></div>
 			</div>
-			<div id = 'playerchoice'>You have chosen: </div>
-			<div id = 'computerchoice'>The computer choses:</div>
+			<div id = 'playerchoice'></div>
+			<div id = 'computerchoice'></div>
+			<div id = "gameresults"></div>
 		</div>
 		<div id = "sectionthree">
-			<h2 id = "sectionthree-one">YOU WIN / LOSE Text goes here</h2>
-			<h3 id = "sectionthree-two">Score Text goes here</h3>
+			<h3 id = "totalscoreboard">CPU: 0 Player: 0 Ties: 0</h3>
+			<div id = "reset"><h3 id = "resetbutton" class = "button wrap">Reset?</h3></div>
 		</div>	
 	</div>
 	<script src="js/main.js"></script>
+	<script src="https://kit.fontawesome.com/3a0226fe71.js" crossorigin="anonymous"></script>
 </body>
 </html>

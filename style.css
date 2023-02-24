@@ -18,12 +18,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -52,10 +52,12 @@ table {
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bolder;
+	background-color: #FFF;
 }
 
 *{
 	border: solid;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -95,12 +97,89 @@ h3 {
 #choicetitle{
 	display: flex;
 	justify-content: space-around;
+	font-size: xx-large;
+
 }
 
 #choice{
 	display: flex;
 	justify-content: space-around;
+	height: 40px;
+}
+
+#playerchoice{
+	display: flex;
+	justify-content: center;
+}
+
+#computerchoice{
+	display: flex;
+	justify-content: center;
+}
+
+#gameresults{
+	display: flex;
+	justify-content: center;
+}
+
+#sectionthree{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#totalscoreboard, #reset{
+	display: flex;
+	justify-content: center;
 }
 
 
+/* final styles and colors here: */
+
+#sectionone{
+	border-radius: 8px;
+	padding: 40px;
+	background-color: #2EE59D;
+}
+
+#sectiontwo div{
+	margin: 5px;
+}
+
+.button {
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: #2EE59D;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	margin: 20px;
+}
+  
+.button:hover {
+	background-color: #2EE59D;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+}
+
+.wrap {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#choice{
+	padding-bottom: 20px;
+}
 
